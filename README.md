@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🗑️ Smart Waste Pickup Scheduler
 
-## Getting Started
+A microservice-based full-stack system that allows users to schedule garbage, recycling, or e-waste pickups and helps city administrators manage pickups efficiently.
 
-First, run the development server:
+> 🚀 Built with Java, Spring Boot, MongoDB, Docker, and minimal frontend.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📌 Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 👤 User
+- Sign up / Login (JWT-secured)
+- Schedule pickup by type (garbage, recyclable, e-waste)
+- Select location and preferred time slot
+- Track status of pickup
+- View pickup history
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🧑‍💼 Admin
+- View and manage all scheduled pickups
+- Assign pickups to waste collection trucks
+- Mark pickups as completed
+- Monitor daily pickup load
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🧱 Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Layer            | Technology                    |
+|------------------|-------------------------------|
+| Language         | Java 17                       |
+| Framework        | Spring Boot (Microservices)   |
+| Database         | MongoDB                       |
+| Auth             | JWT, Spring Security          |
+| Communication    | REST API                      |
+| Containers       | Docker, Docker Compose        |
+| Discovery        | Spring Cloud Eureka           |
+| Gateway          | Spring Cloud Gateway          |
+| Frontend         | HTML + Bootstrap + JS (minimal) |
+| API Docs         | Swagger / OpenAPI             |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🧩 Microservices Architecture
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
