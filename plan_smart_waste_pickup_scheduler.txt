@@ -1,0 +1,51 @@
+Smart Waste Pickup Scheduler Frontend Implementation Plan
+
+Information Gathered:
+- Project: Smart Waste Pickup Scheduler, a civic utility app for scheduling garbage pickup, reporting waste overflow, and managing e-waste/recyclables.
+- Architecture: Frontend with simple UI (HTML/JS or Thymeleaf), backend microservices with Spring Boot + MongoDB, JWT-based auth, notification service, admin dashboard.
+- Current environment: Next.js project with many UI components under src/components/ui, hooks, and lib utils.
+- Backend services are not present here; frontend will interact with backend via REST APIs (mocked or real).
+- Tailwind CSS is used for styling, with Google Fonts for typography.
+- No icons unless specified; use lucid-react icons if needed.
+- Client components require "use client" directive.
+
+Plan:
+1. Setup main layout and global styles:
+   - src/app/layout.tsx: Define main layout with header, footer, and navigation.
+   - src/app/globals.css: (Do not modify as per rules)
+2. Create main pages:
+   - src/app/page.tsx: Landing page or user dashboard.
+   - src/app/login/page.tsx: User login page with JWT auth form.
+   - src/app/schedule/page.tsx: Pickup scheduling form (location, type, time slot).
+   - src/app/tracking/page.tsx: View scheduled pickups and status.
+   - src/app/admin/page.tsx: Admin dashboard to view and assign pickups.
+3. Create reusable components under src/components:
+   - AuthForm.tsx: Login form component.
+   - PickupForm.tsx: Form for scheduling pickups.
+   - PickupList.tsx: List of pickups for tracking/admin.
+   - Notification.tsx: Notification UI component (mocked).
+   - MapView.tsx: Optional Google Maps integration component.
+4. Implement API integration (mocked for now) for auth, pickup scheduling, tracking, and admin.
+5. Use Tailwind CSS utility classes for styling, Google Fonts for typography.
+6. Use "use client" directive for components using React hooks.
+7. Ensure responsive design and accessibility.
+
+Dependent Files to be Edited/Created:
+- src/app/layout.tsx
+- src/app/page.tsx
+- src/app/login/page.tsx
+- src/app/schedule/page.tsx
+- src/app/tracking/page.tsx
+- src/app/admin/page.tsx
+- src/components/AuthForm.tsx
+- src/components/PickupForm.tsx
+- src/components/PickupList.tsx
+- src/components/Notification.tsx
+- src/components/MapView.tsx (optional)
+
+Follow-up Steps:
+- Implement API integration with real backend endpoints when available.
+- Test UI responsiveness and functionality.
+- Run Next.js dev server to verify the app.
+
+Please confirm if I can proceed with this detailed plan.
